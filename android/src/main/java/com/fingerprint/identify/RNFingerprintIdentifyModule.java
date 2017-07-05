@@ -61,12 +61,12 @@ public class RNFingerprintIdentifyModule extends ReactContextBaseJavaModule {
       return;
     }
 
-    if (mIsCalledStartIdentify) {
-        mFingerprintIdentify.resumeIdentify();
-        return;
-    }
+//     if (mIsCalledStartIdentify) {
+//         mFingerprintIdentify.resumeIdentify();
+//         return;
+//     }
 
-    mIsCalledStartIdentify = true;
+//     mIsCalledStartIdentify = true;
     mFingerprintIdentify.resumeIdentify();
     mFingerprintIdentify.startIdentify(6, new BaseFingerprint.FingerprintIdentifyListener() {
       @Override
